@@ -15,7 +15,7 @@ public class Main {
             characters[i] = charArray[i];
         }
 
-        Arrays.sort(characters, Comparator.reverseOrder());
+        Arrays.sort(characters, (x,y) -> x > y ? -1 : 1);
 
         for (Character character : characters) {
             System.out.print(character);
